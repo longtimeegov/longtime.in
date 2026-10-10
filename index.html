@@ -45,8 +45,8 @@ form{display:grid;gap:11px}label{font-size:13px;font-weight:700;display:grid;gap
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script>
 document.getElementById('year').textContent=new Date().getFullYear();
 /* Replace placeholders with Project URL and publishable/anon key from Supabase API settings. Never use a service_role/secret key in public HTML. */
-const SUPABASE_URL='PASTE_SUPABASE_PROJECT_URL_HERE';
-const SUPABASE_ANON_KEY='PASTE_SUPABASE_PUBLISHABLE_OR_ANON_KEY_HERE';
+const SUPABASE_URL='https://qklffvewrkpkxgsmdoqo.supabase.co';
+const SUPABASE_ANON_KEY='sb_publishable_YlLkuCRW9I3gJ102Cks2aA_nsh2GXqi';
 let supabaseClient=null;
 if(window.supabase&&SUPABASE_URL.startsWith('https://')&&!SUPABASE_URL.includes('PASTE_')&&!SUPABASE_ANON_KEY.includes('PASTE_'))supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);
 let authMode='login';
